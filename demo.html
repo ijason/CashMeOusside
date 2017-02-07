@@ -1,0 +1,28 @@
+<html lang="en">
+    <head>
+        <style>
+            .wrapper {
+                text-align: center;
+            }
+            .button {
+                position: absolute;
+                top: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <button class="button">Click Me!</button>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="jquery.CashMeOusside.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var plugin = $("body").CashMeOusside();
+            $(".button").click( function(){
+                plugin.show();
+            });
+        });
+    </script>
+</html>
